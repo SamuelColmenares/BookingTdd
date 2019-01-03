@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MetaData" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMetaData_ConsultarAeropuertos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarAeropuertos" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarAeropuertos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarAeropuertosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarCiudades_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCiudades" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarCiudades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCiudadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarCiudadesdeOficinas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCiudadesdeOficinas" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarCiudadesdeOficinas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCiudadesdeOficinasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarDepartamentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarDepartamentos" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarDepartamentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarDepartamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTipoDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTipoDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTipoDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTipoDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarFranquicia_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFranquicia" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarFranquicia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFranquiciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarGenero_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarGenero" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarGenero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarGeneroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarIdioma_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarIdioma" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarIdioma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarIdiomaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarPais_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPais" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarPais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarRegion" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarSaludo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSaludo" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarSaludo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSaludoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTiposTarjeta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTiposTarjeta" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTiposTarjeta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTiposTarjetaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarUbicacionFila_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUbicacionFila" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarUbicacionFila_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUbicacionFilaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarUbicacionSilla_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUbicacionSilla" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarUbicacionSilla_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUbicacionSillaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarOficinas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOficinas" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarOficinas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOficinasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTodoDeRegiones_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTodoDeRegiones" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTodoDeRegiones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTodoDeRegionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarCiudadXIataAeropuerto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCiudadXIataAeropuerto" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarCiudadXIataAeropuerto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCiudadXIataAeropuertoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTimeZoneIATA_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTimeZoneIATA" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarTimeZoneIATA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTimeZoneIATAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarOficinasDeVenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOficinasDeVenta" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarOficinasDeVenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOficinasDeVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarOficinasDeVentaPaisIdioma_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOficinasDeVentaPaisIdioma" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarOficinasDeVentaPaisIdioma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOficinasDeVentaPaisIdiomaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultaEstadoPorIdPais_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaEstadoPorIdPais" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultaEstadoPorIdPais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaEstadoPorIdPaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarLandingFiltro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLandingFiltro" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarLandingFiltro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLandingFiltroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarLandingsPrinicipales_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLandingsPrinicipales" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarLandingsPrinicipales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLandingsPrinicipalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarUltimaVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUltimaVersion" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarUltimaVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUltimaVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_InsertarLanding_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarLanding" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_InsertarLanding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarLandingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_InactivarLanding_InputMessage">
+    <wsdl:part name="parameters" element="tns:InactivarLanding" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_InactivarLanding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InactivarLandingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarVersionesLanding_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVersionesLanding" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarVersionesLanding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVersionesLandingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_EliminarLanding_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarLanding" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_EliminarLanding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarLandingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_InsertarImagenPrebooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarImagenPrebooking" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_InsertarImagenPrebooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarImagenPrebookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarImagenesPrebooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarImagenesPrebooking" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarImagenesPrebooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarImagenesPrebookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarImagenPrebooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarImagenPrebooking" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_ConsultarImagenPrebooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarImagenPrebookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_EliminarImagenPrebooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarImagenPrebooking" />
+  </wsdl:message>
+  <wsdl:message name="IMetaData_EliminarImagenPrebooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarImagenPrebookingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMetaData">
+    <wsdl:operation name="ConsultarAeropuertos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarAeropuertos" message="tns:IMetaData_ConsultarAeropuertos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarAeropuertosResponse" message="tns:IMetaData_ConsultarAeropuertos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCiudades">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarCiudades" message="tns:IMetaData_ConsultarCiudades_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarCiudadesResponse" message="tns:IMetaData_ConsultarCiudades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCiudadesdeOficinas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarCiudadesdeOficinas" message="tns:IMetaData_ConsultarCiudadesdeOficinas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarCiudadesdeOficinasResponse" message="tns:IMetaData_ConsultarCiudadesdeOficinas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarDepartamentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarDepartamentos" message="tns:IMetaData_ConsultarDepartamentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarDepartamentosResponse" message="tns:IMetaData_ConsultarDepartamentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTipoDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarTipoDocumento" message="tns:IMetaData_ConsultarTipoDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarTipoDocumentoResponse" message="tns:IMetaData_ConsultarTipoDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFranquicia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarFranquicia" message="tns:IMetaData_ConsultarFranquicia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarFranquiciaResponse" message="tns:IMetaData_ConsultarFranquicia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarGenero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarGenero" message="tns:IMetaData_ConsultarGenero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarGeneroResponse" message="tns:IMetaData_ConsultarGenero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarIdioma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarIdioma" message="tns:IMetaData_ConsultarIdioma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarIdiomaResponse" message="tns:IMetaData_ConsultarIdioma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarPais" message="tns:IMetaData_ConsultarPais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarPaisResponse" message="tns:IMetaData_ConsultarPais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarRegion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarRegion" message="tns:IMetaData_ConsultarRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarRegionResponse" message="tns:IMetaData_ConsultarRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSaludo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarSaludo" message="tns:IMetaData_ConsultarSaludo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarSaludoResponse" message="tns:IMetaData_ConsultarSaludo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTiposTarjeta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarTiposTarjeta" message="tns:IMetaData_ConsultarTiposTarjeta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarTiposTarjetaResponse" message="tns:IMetaData_ConsultarTiposTarjeta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUbicacionFila">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarUbicacionFila" message="tns:IMetaData_ConsultarUbicacionFila_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarUbicacionFilaResponse" message="tns:IMetaData_ConsultarUbicacionFila_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUbicacionSilla">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarUbicacionSilla" message="tns:IMetaData_ConsultarUbicacionSilla_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarUbicacionSillaResponse" message="tns:IMetaData_ConsultarUbicacionSilla_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOficinas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarOficinas" message="tns:IMetaData_ConsultarOficinas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarOficinasResponse" message="tns:IMetaData_ConsultarOficinas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTodoDeRegiones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarTodoDeRegiones" message="tns:IMetaData_ConsultarTodoDeRegiones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarTodoDeRegionesResponse" message="tns:IMetaData_ConsultarTodoDeRegiones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCiudadXIataAeropuerto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarCiudadXIataAeropuerto" message="tns:IMetaData_ConsultarCiudadXIataAeropuerto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarCiudadXIataAeropuertoResponse" message="tns:IMetaData_ConsultarCiudadXIataAeropuerto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTimeZoneIATA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarTimeZoneIATA" message="tns:IMetaData_ConsultarTimeZoneIATA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarTimeZoneIATAResponse" message="tns:IMetaData_ConsultarTimeZoneIATA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOficinasDeVenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarOficinasDeVenta" message="tns:IMetaData_ConsultarOficinasDeVenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarOficinasDeVentaResponse" message="tns:IMetaData_ConsultarOficinasDeVenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOficinasDeVentaPaisIdioma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarOficinasDeVentaPaisIdioma" message="tns:IMetaData_ConsultarOficinasDeVentaPaisIdioma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarOficinasDeVentaPaisIdiomaResponse" message="tns:IMetaData_ConsultarOficinasDeVentaPaisIdioma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoPorIdPais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultaEstadoPorIdPais" message="tns:IMetaData_ConsultaEstadoPorIdPais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultaEstadoPorIdPaisResponse" message="tns:IMetaData_ConsultaEstadoPorIdPais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLandingFiltro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarLandingFiltro" message="tns:IMetaData_ConsultarLandingFiltro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarLandingFiltroResponse" message="tns:IMetaData_ConsultarLandingFiltro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLandingsPrinicipales">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarLandingsPrinicipales" message="tns:IMetaData_ConsultarLandingsPrinicipales_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarLandingsPrinicipalesResponse" message="tns:IMetaData_ConsultarLandingsPrinicipales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUltimaVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarUltimaVersion" message="tns:IMetaData_ConsultarUltimaVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarUltimaVersionResponse" message="tns:IMetaData_ConsultarUltimaVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarLanding">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/InsertarLanding" message="tns:IMetaData_InsertarLanding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/InsertarLandingResponse" message="tns:IMetaData_InsertarLanding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InactivarLanding">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/InactivarLanding" message="tns:IMetaData_InactivarLanding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/InactivarLandingResponse" message="tns:IMetaData_InactivarLanding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVersionesLanding">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarVersionesLanding" message="tns:IMetaData_ConsultarVersionesLanding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarVersionesLandingResponse" message="tns:IMetaData_ConsultarVersionesLanding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarLanding">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/EliminarLanding" message="tns:IMetaData_EliminarLanding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/EliminarLandingResponse" message="tns:IMetaData_EliminarLanding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarImagenPrebooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/InsertarImagenPrebooking" message="tns:IMetaData_InsertarImagenPrebooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/InsertarImagenPrebookingResponse" message="tns:IMetaData_InsertarImagenPrebooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarImagenesPrebooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarImagenesPrebooking" message="tns:IMetaData_ConsultarImagenesPrebooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarImagenesPrebookingResponse" message="tns:IMetaData_ConsultarImagenesPrebooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarImagenPrebooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/ConsultarImagenPrebooking" message="tns:IMetaData_ConsultarImagenPrebooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/ConsultarImagenPrebookingResponse" message="tns:IMetaData_ConsultarImagenPrebooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarImagenPrebooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMetaData/EliminarImagenPrebooking" message="tns:IMetaData_EliminarImagenPrebooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMetaData/EliminarImagenPrebookingResponse" message="tns:IMetaData_EliminarImagenPrebooking_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMetaData" type="tns:IMetaData">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarAeropuertos">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarAeropuertos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCiudades">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarCiudades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCiudadesdeOficinas">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarCiudadesdeOficinas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarDepartamentos">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarDepartamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTipoDocumento">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarTipoDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFranquicia">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarFranquicia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarGenero">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarGenero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarIdioma">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarIdioma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPais">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarPais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarRegion">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSaludo">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarSaludo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTiposTarjeta">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarTiposTarjeta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUbicacionFila">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarUbicacionFila" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUbicacionSilla">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarUbicacionSilla" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOficinas">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarOficinas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTodoDeRegiones">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarTodoDeRegiones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCiudadXIataAeropuerto">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarCiudadXIataAeropuerto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTimeZoneIATA">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarTimeZoneIATA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOficinasDeVenta">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarOficinasDeVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOficinasDeVentaPaisIdioma">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarOficinasDeVentaPaisIdioma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaEstadoPorIdPais">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultaEstadoPorIdPais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLandingFiltro">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarLandingFiltro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLandingsPrinicipales">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarLandingsPrinicipales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUltimaVersion">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarUltimaVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarLanding">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/InsertarLanding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InactivarLanding">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/InactivarLanding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVersionesLanding">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarVersionesLanding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarLanding">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/EliminarLanding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarImagenPrebooking">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/InsertarImagenPrebooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarImagenesPrebooking">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarImagenesPrebooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarImagenPrebooking">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/ConsultarImagenPrebooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarImagenPrebooking">
+      <soap:operation soapAction="http://tempuri.org/IMetaData/EliminarImagenPrebooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MetaData">
+    <wsdl:port name="BasicHttpBinding_IMetaData" binding="tns:BasicHttpBinding_IMetaData">
+      <soap:address location="http://462321-app1.ord.intensive.int:8888/Avianca.BackEnd/MetaData/MetaData.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

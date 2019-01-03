@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" />
+  <xs:element name="ConsultarAeropuertos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q1:FiltroAeropuertos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarAeropuertosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarAeropuertosResult" nillable="true" type="q2:ArrayOfAeropuerto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCiudades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q3:FiltroCiudades" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCiudadesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarCiudadesResult" nillable="true" type="q4:ArrayOfCiudad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCiudadesdeOficinas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q5:FiltroCiudades" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCiudadesdeOficinasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarCiudadesdeOficinasResult" nillable="true" type="q6:ArrayOfCiudad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDepartamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q7:FiltroDepartamentos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDepartamentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarDepartamentosResult" nillable="true" type="q8:ArrayOfDepartamento" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTipoDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q9:FiltroDocumento" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTipoDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarTipoDocumentoResult" nillable="true" type="q10:ArrayOfDocumento" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarFranquicia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q11:FiltroFranquicia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarFranquiciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarFranquiciaResult" nillable="true" type="q12:ArrayOfFranquicia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarGenero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q13:FiltroGenero" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarGeneroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarGeneroResult" nillable="true" type="q14:ArrayOfGenero" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarIdioma">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q15:FiltroIdioma" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarIdiomaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarIdiomaResult" nillable="true" type="q16:ArrayOfIdioma" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPais">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q17:FiltroPais" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPaisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarPaisResult" nillable="true" type="q18:ArrayOfPais" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarRegion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q19:FiltroRegion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarRegionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarRegionResult" nillable="true" type="q20:ArrayOfRegion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarSaludo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q21:FiltroSaludo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarSaludoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarSaludoResult" nillable="true" type="q22:ArrayOfTipoSaludo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTiposTarjeta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q23:FiltroTipoTarjeta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTiposTarjetaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarTiposTarjetaResult" nillable="true" type="q24:ArrayOfTipoTarjeta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUbicacionFila">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q25:FiltroUbicacionFila" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUbicacionFilaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarUbicacionFilaResult" nillable="true" type="q26:ArrayOfUbicacionFila" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUbicacionSilla">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q27:FiltroUbicacionSilla" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUbicacionSillaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarUbicacionSillaResult" nillable="true" type="q28:ArrayOfUbicacionSilla" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOficinas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idioma" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOficinasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarOficinasResult" nillable="true" type="q29:ArrayOfOficinas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTodoDeRegiones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idioma" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTodoDeRegionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarTodoDeRegionesResult" nillable="true" type="q30:ArrayOfTodoRegiones" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCiudadXIataAeropuerto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q31:FiltroCiudades" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCiudadXIataAeropuertoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarCiudadXIataAeropuertoResult" nillable="true" type="q32:ArrayOfCiudadAeropuerto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTimeZoneIATA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IATA" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarTimeZoneIATAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarTimeZoneIATAResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOficinasDeVenta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idioma" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOficinasDeVentaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarOficinasDeVentaResult" nillable="true" type="q33:ArrayOfOficinasNm" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOficinasDeVentaPaisIdioma">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idPais" type="xs:int" />
+        <xs:element minOccurs="0" name="idioma" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOficinasDeVentaPaisIdiomaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarOficinasDeVentaPaisIdiomaResult" nillable="true" type="q34:ArrayOfOficinas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaEstadoPorIdPais">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q35:FiltroEstado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaEstadoPorIdPaisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultaEstadoPorIdPaisResult" nillable="true" type="q36:ArrayOfEstado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLandingFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="filtro" nillable="true" type="q37:Landing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLandingFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarLandingFiltroResult" nillable="true" type="q38:ArrayOfLanding" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLandingsPrinicipales">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLandingsPrinicipalesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarLandingsPrinicipalesResult" nillable="true" type="q39:ArrayOfLanding" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUltimaVersion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pais" type="xs:int" />
+        <xs:element minOccurs="0" name="idioma" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUltimaVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarUltimaVersionResult" nillable="true" type="q40:Landing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarLanding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q41:Landing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarLandingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertarLandingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InactivarLanding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q42:Landing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InactivarLandingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InactivarLandingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarVersionesLanding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="datos" nillable="true" type="q43:Landing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarVersionesLandingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarVersionesLandingResult" nillable="true" type="q44:ArrayOfLanding" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarLanding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarLandingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminarLandingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarImagenPrebooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="imagen" nillable="true" type="q45:Imagen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarImagenPrebookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertarImagenPrebookingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarImagenesPrebooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="imagen" nillable="true" type="q46:Imagen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarImagenesPrebookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarImagenesPrebookingResult" nillable="true" type="q47:ArrayOfImagen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarImagenPrebooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="imagen" nillable="true" type="q48:Imagen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarImagenPrebookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Avianca.Lukas.Contratos.MetaData" minOccurs="0" name="ConsultarImagenPrebookingResult" nillable="true" type="q49:Imagen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarImagenPrebooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarImagenPrebookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminarImagenPrebookingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

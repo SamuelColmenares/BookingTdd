@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="01342fd1-ca77-4107-8da9-e0bd9501dd68" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://166.78.74.220:8888/Avianca.Backend/MetaData/MetaData.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="bcf63295-6fb4-4083-b924-b24816d1fe7a" SourceId="1" SourceUrl="http://166.78.74.220:8888/Avianca.Backend/MetaData/MetaData.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="aceb40d0-ffc4-4a92-884b-911b40bd6b8e" SourceId="1" SourceUrl="http://166.78.74.220:8888/Avianca.Backend/MetaData/MetaData.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9e064e65-862a-4991-946a-ad19877e2950" SourceId="1" SourceUrl="http://166.78.74.220:8888/Avianca.Backend/MetaData/MetaData.svc/mex" />
+    <MetadataFile FileName="Avianca.Lukas.Contratos.MetaData.xsd" MetadataType="Schema" ID="23a1137d-ccb5-4376-ab72-d39a1e7e3557" SourceId="1" SourceUrl="http://166.78.74.220:8888/Avianca.Backend/MetaData/MetaData.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
