@@ -6,11 +6,23 @@ namespace BookingTDD.Controllers
     using System.Web.Mvc;
     using System.Linq;
     using BookingTDD.Models;
+    using BookingTDD.Services;
+    using System.Threading.Tasks;
 
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+            MetadataIntegration data = new MetadataIntegration();
+            var a = data.InvokeCities("ES");
+
+            List<SelectListItem> cities = new List<SelectListItem>();
+
+            Parallel.ForEach(a, (city) =>
+            {
+                cities.Add(new SelectListItem { Text = city.NombreAeropuerto, Value = city.CodigoAeropuerto.ToString() });
+            });
+
             List<SelectListItem> passangersList = new List<SelectListItem>();
             for (int i = 0; i < 10; i++)
             {
@@ -22,6 +34,7 @@ namespace BookingTDD.Controllers
             ViewBag.ListPas = adultList;
             passangersList.RemoveAt(0);
             ViewBag.ListAdt = passangersList;
+            ViewBag.Cities = cities;
             return View();
         }
 

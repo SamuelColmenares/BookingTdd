@@ -1,13 +1,13 @@
-﻿
+﻿using BookingTDD.MetaData;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace BookingTDD.Test.Fakes
 {
-    using BookingTDD.MetaData;
-    using System;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-
-    public class MetaDataFake : IMetaData
+    class MetaDataFake : IMetaData
     {
         public List<Estado> ConsultaEstadoPorIdPais(FiltroEstado datos)
         {
@@ -22,9 +22,10 @@ namespace BookingTDD.Test.Fakes
         public List<Aeropuerto> ConsultarAeropuertos(FiltroAeropuertos datos)
         {
             List<Aeropuerto> aeropFake = new List<Aeropuerto>() {
-                new Aeropuerto { CodigoAeropuerto = 1, CodigoCiudad = 1, NombreAeropuerto = "ElDorado" },
-            new Aeropuerto { CodigoAeropuerto = 1, CodigoCiudad = 1, NombreAeropuerto = "Terminal" }
+                new Aeropuerto { CodigoAeropuerto = 1, CodigoCiudad = 1, NombreAeropuerto = "Bogota" },
+            new Aeropuerto { CodigoAeropuerto = 2, CodigoCiudad = 2, NombreAeropuerto = "Terminal" }
             };
+
             return aeropFake;
         }
 

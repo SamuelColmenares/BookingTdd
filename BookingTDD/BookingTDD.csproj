@@ -123,6 +123,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Attributes\DateGreaterThanAttribute.cs" />
+    <Compile Include="Bussiness\Validations.cs" />
     <Compile Include="Connected Services\MetaData\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -134,6 +135,7 @@
     </Compile>
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MetadataIntegration.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Connected Services\MetaData\BookingTDD.MetaData.Aeropuerto.datasource">
